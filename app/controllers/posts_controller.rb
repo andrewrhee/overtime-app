@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   def approve
     authorize @post
     @post.approved!
-    redirect_to root_path, notice: "The post hsa been approved"
+    redirect_to root_path, notice: "The post has been approved"
   end
 
   def new
